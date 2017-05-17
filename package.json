@@ -1,0 +1,23 @@
+{
+  "name": "typescript-examples",
+  "version": "1.0.0",
+  "description": "Some TypeScript example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node dist/greetings.js",
+    "prestart": "rm -R dist; node_modules/typescript/bin/tsc",
+    "build": "node_modules/typescript/bin/tsc",
+    "watch": "node_modules/typescript/bin/tsc -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NAdamo/typescript-examples.git"
+  },
+  "devDependencies": {
+    "typescript": "^2.3.2"
+  }
+}
