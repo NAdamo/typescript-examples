@@ -43,12 +43,11 @@ function profileWithDefaults(firstName: string, lastName: string, age: number = 
 console.log('example of default arguments');
 console.log(profileWithDefaults("John", "Smith"));
 
-let suits = ["hearts", "spades", "clubs", "diamonds"];
-let cards = ["ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "jack", "queen", 'king'];
-
 function pickCard(x: { suit: string; card: string; }[]): number;
 function pickCard(x: number): { suit: string; card: string; };
 function pickCard(x: any): any {
+    let suits = ["hearts", "spades", "clubs", "diamonds"];
+    let cards = ["ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "jack", "queen", 'king'];
     // Check to see if we're working with an object/array
     // if so, they gave us the deck and we'll pick the card
     if (typeof x == "object") {
